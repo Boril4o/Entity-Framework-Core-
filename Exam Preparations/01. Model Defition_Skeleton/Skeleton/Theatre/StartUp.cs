@@ -1,24 +1,27 @@
-﻿namespace SoftJail
+﻿namespace Theatre
 {
     using System;
-    using Data;
+    using System.IO;
+
     using AutoMapper;
     using Microsoft.EntityFrameworkCore;
-    using System.IO;
+
+    using Data;
 
     public class StartUp
     {
         public static void Main(string[] args)
         {
-            var context = new SoftJailDbContext();
+            var context = new TheatreContext();
 
-            Mapper.Initialize(config => config.AddProfile<SoftJailProfile>());
+            Mapper.Initialize(config => config.AddProfile<TheatreProfile>());
 
-           ResetDatabase(context, shouldDropDatabase: false);
+            ResetDatabase(context, shouldDropDatabase: false);
 
             var projectDir = GetProjectDirectory();
 
             ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+
             ExportEntities(context, projectDir + @"ExportResults/");
 
             //using (var transaction = context.Database.BeginTransaction())
@@ -27,33 +30,36 @@
             //}
         }
 
-        private static void ImportEntities(SoftJailDbContext context, string baseDir, string exportDir)
+        private static void ImportEntities(TheatreContext context, string baseDir, string exportDir)
         {
-            var departmentsCells =
-                DataProcessor.Deserializer.ImportDepartmentsCells(context,
-                    File.ReadAllText(baseDir + "ImportDepartmentsCells.json"));
-            PrintAndExportEntityToFile(departmentsCells, exportDir + "ImportDepartmentsCells.txt");
+            var theatersAndTickets =
+              DataProcessor.Deserializer.ImportPlays(context,
+                  File.ReadAllText(baseDir + "plays.xml"));
+            PrintAndExportEntityToFile(theatersAndTickets, exportDir + "Actual Result - ImportPlays.txt");
 
-            var prisonersMails =
-                DataProcessor.Deserializer.ImportPrisonersMails(context,
-                    File.ReadAllText(baseDir + "ImportPrisonersMails.json"));
-            PrintAndExportEntityToFile(prisonersMails, exportDir + "ImportPrisonersMails.txt");
+            var casts = DataProcessor.Deserializer.ImportCasts(context,
+               File.ReadAllText(baseDir + "casts.xml"));
+            PrintAndExportEntityToFile(casts, exportDir + "Actual Result - ImportCasts.txt");
 
-            var officersPrisoners = DataProcessor.Deserializer.ImportOfficersPrisoners(context, File.ReadAllText(baseDir + "ImportOfficersPrisoners.xml"));
-            PrintAndExportEntityToFile(officersPrisoners, exportDir + "ImportOfficersPrisoners.txt");
+            var plays =
+                DataProcessor.Deserializer.ImportTtheatersTickets(context,
+                    File.ReadAllText(baseDir + "theatres-and-tickets.json"));
+            PrintAndExportEntityToFile(plays, exportDir + "Actual Result - ImportTheatresTickets.txt");
+
         }
 
-        private static void ExportEntities(SoftJailDbContext context, string exportDir)
+        private static void ExportEntities(TheatreContext context, string exportDir)
         {
-            var jsonOutput = DataProcessor.Serializer.ExportPrisonersByCells(context, new[] { 1, 5, 7, 3 });
-            Console.WriteLine(jsonOutput);
-            File.WriteAllText(exportDir + "PrisonersByCells.json", jsonOutput);
+            var exportTheaters = DataProcessor.Serializer.ExportTheatres(context, 6);
+            Console.WriteLine(exportTheaters);
+            File.WriteAllText(exportDir + "Actual Result - ExportTheatres.json", exportTheaters);
 
-            var xmlOutput = DataProcessor.Serializer.ExportPrisonersInbox(context, "Melanie Simonich,Diana Ebbs,Binni Cornhill");
-            Console.WriteLine(xmlOutput);
-            File.WriteAllText(exportDir + "PrisonersInbox.xml", xmlOutput);
+            var exportPlays = DataProcessor.Serializer.ExportPlays(context, 7.5);
+            Console.WriteLine(exportPlays);
+            File.WriteAllText(exportDir + "Actual Result - ExportPlays.xml", exportPlays);
         }
-        private static void ResetDatabase(SoftJailDbContext context, bool shouldDropDatabase = false)
+
+        private static void ResetDatabase(TheatreContext context, bool shouldDropDatabase = false)
         {
             if (shouldDropDatabase)
             {

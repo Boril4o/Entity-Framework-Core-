@@ -27,8 +27,6 @@ namespace SoftJail.DataProcessor
                 JsonConvert.DeserializeObject<List<ImportDepartmentCellDto>>(jsonString);
 
             List<Department> departments = new List<Department>();
-            List<Cell> cells = new List<Cell>();
-
             foreach (var departmentCellDto in importDepartmentCells)
             {
                 if (!IsValid(departmentCellDto))
@@ -73,12 +71,11 @@ namespace SoftJail.DataProcessor
 
                 sb.AppendLine($"Imported {department.Name} with {department.Cells.Count} cells");
                 departments.Add(department);
-                cells.AddRange(department.Cells);
             }
 
             context.Departments.AddRange(departments);
-            context.Cells.AddRange(cells);
-            //context.SaveChanges();
+            context.SaveChanges();
+            
 
             return sb.ToString().TrimEnd();
         }
@@ -167,13 +164,13 @@ namespace SoftJail.DataProcessor
 
                 p.Mails = mails;
                 mails.AddRange(mailsDtos);
+                prisoners.Add(p);
 
                 sb.AppendLine($"Imported {p.FullName} {p.Age} years old");
             }
 
             context.Prisoners.AddRange(prisoners);
-            context.Mails.AddRange(mails);
-            //context.SaveChanges();
+            context.SaveChanges();
 
             return sb.ToString().TrimEnd();
         }
@@ -226,6 +223,7 @@ namespace SoftJail.DataProcessor
                     OfficerPrisoner officerPrisoner = new OfficerPrisoner()
                     {
                         OfficerId = officer.Id,
+                        Officer = officer,
                         PrisonerId = prisonerDto.Id,
                     };
 
@@ -239,9 +237,8 @@ namespace SoftJail.DataProcessor
                 sb.AppendLine($"Imported {officer.FullName} ({op.Count} prisoners)");
             }
 
-            context.Officers.AddRange(officers);
             context.OfficersPrisoners.AddRange(officersPrisoners);
-            //context.SaveChanges();
+            context.SaveChanges();
 
             return sb.ToString().TrimEnd();
         }
