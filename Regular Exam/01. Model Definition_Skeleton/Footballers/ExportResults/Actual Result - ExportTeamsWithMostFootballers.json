@@ -1,0 +1,300 @@
+[
+  {
+    "Name": "Manchester City F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Joselu",
+        "ContractStartDate": "12/31/2021",
+        "ContractEndDate": "04/14/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Phil Foden",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "04/13/2025",
+        "BestSkillType": "Dribble",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Ederson",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "09/26/2024",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Ilkay Gundogan",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "07/29/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Martin Terrier",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "06/16/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Kevin De Bruyne",
+        "ContractStartDate": "09/29/2020",
+        "ContractEndDate": "04/21/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Wojiech Szczesny",
+        "ContractStartDate": "07/28/2020",
+        "ContractEndDate": "01/14/2023",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Bernardo Silva",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "12/07/2022",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      }
+    ]
+  },
+  {
+    "Name": "Manchester City F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Joselu",
+        "ContractStartDate": "12/31/2021",
+        "ContractEndDate": "04/14/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Phil Foden",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "04/13/2025",
+        "BestSkillType": "Dribble",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Ederson",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "09/26/2024",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Ilkay Gundogan",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "07/29/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Martin Terrier",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "06/16/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Kevin De Bruyne",
+        "ContractStartDate": "09/29/2020",
+        "ContractEndDate": "04/21/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Wojiech Szczesny",
+        "ContractStartDate": "07/28/2020",
+        "ContractEndDate": "01/14/2023",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Bernardo Silva",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "12/07/2022",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      }
+    ]
+  },
+  {
+    "Name": "Manchester City F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Joselu",
+        "ContractStartDate": "12/31/2021",
+        "ContractEndDate": "04/14/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Phil Foden",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "04/13/2025",
+        "BestSkillType": "Dribble",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Ederson",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "09/26/2024",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Ilkay Gundogan",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "07/29/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Martin Terrier",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "06/16/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Kevin De Bruyne",
+        "ContractStartDate": "09/29/2020",
+        "ContractEndDate": "04/21/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Wojiech Szczesny",
+        "ContractStartDate": "07/28/2020",
+        "ContractEndDate": "01/14/2023",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Bernardo Silva",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "12/07/2022",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      }
+    ]
+  },
+  {
+    "Name": "FC Bayern Munich",
+    "Footballers": [
+      {
+        "FootballerName": "Thibaut Courtois",
+        "ContractStartDate": "10/03/2020",
+        "ContractEndDate": "09/09/2025",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Dusan Vlahovic",
+        "ContractStartDate": "07/25/2020",
+        "ContractEndDate": "06/29/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Teji Savanier",
+        "ContractStartDate": "06/07/2020",
+        "ContractEndDate": "05/12/2025",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Lorenzo Pellegrini",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "06/17/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Moussa Dembele",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "12/01/2023",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      }
+    ]
+  },
+  {
+    "Name": "FC Bayern Munich",
+    "Footballers": [
+      {
+        "FootballerName": "Thibaut Courtois",
+        "ContractStartDate": "10/03/2020",
+        "ContractEndDate": "09/09/2025",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Dusan Vlahovic",
+        "ContractStartDate": "07/25/2020",
+        "ContractEndDate": "06/29/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Teji Savanier",
+        "ContractStartDate": "06/07/2020",
+        "ContractEndDate": "05/12/2025",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Lorenzo Pellegrini",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "06/17/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Moussa Dembele",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "12/01/2023",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      }
+    ]
+  }
+]

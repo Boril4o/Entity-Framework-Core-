@@ -1,0 +1,33 @@
+Successfully imported team - Brentford F.C. with 3 footballers.
+Successfully imported team - Chelsea F.C. with 6 footballers.
+Successfully imported team - Liverpool F.C. with 6 footballers.
+Successfully imported team - Manchester City F.C. with 10 footballers.
+Successfully imported team - Newcastle United F.C. with 3 footballers.
+Successfully imported team - Tottenham Hotspur F.C. with 6 footballers.
+Successfully imported team - Angers SCO with 1 footballers.
+Successfully imported team - AS Monaco with 2 footballers.
+Successfully imported team - Montpellier Herault SC with 5 footballers.
+Successfully imported team - Olympique de Marseille with 2 footballers.
+Successfully imported team - Olympique Lyonnais with 7 footballers.
+Successfully imported team - Paris Saint-Germain F.C. with 9 footballers.
+Successfully imported team - RC Lens with 1 footballers.
+Successfully imported team - Stade Rennais F.C. with 4 footballers.
+Invalid data!
+Successfully imported team - Bayer 04 Leverkusen with 4 footballers.
+Successfully imported team - FC Bayern Munich with 7 footballers.
+Successfully imported team - RB Leipzig with 1 footballers.
+Successfully imported team - SC Freiburg with 3 footballers.
+Successfully imported team - A.C. Milan with 4 footballers.
+Successfully imported team - A.S. Roma with 2 footballers.
+Successfully imported team - Atalanta B.C. with 2 footballers.
+Invalid data!
+Successfully imported team - Juventus F.C. with 4 footballers.
+Successfully imported team - S.S. Lazio with 5 footballers.
+Invalid data!
+Successfully imported team - Torino F.C. with 4 footballers.
+Successfully imported team - U.S. Sassuolo Calcio with 4 footballers.
+Successfully imported team - Atletico de Madrid with 3 footballers.
+Successfully imported team - Deportivo Alaves with 5 footballers.
+Invalid data!
+Successfully imported team - Real Betis Balompie with 4 footballers.
+Successfully imported team - Real Madrid CF Spain with 5 footballers.
